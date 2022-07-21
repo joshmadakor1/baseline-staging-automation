@@ -5,8 +5,9 @@ import azure.functions as func
 
 
 def main(mytimer: func.TimerRequest) -> None:
-    print("I'm drinking coffee rn.")
-    logging.info("I'm drinking coffee rn.")
+    my_message = "I just drank a honey cinnamon latte with oat milk at Caffe Ladro."
+    print(my_message)
+    logging.info(my_message)
     utc_timestamp = datetime.datetime.utcnow().replace(
         tzinfo=datetime.timezone.utc).isoformat()
 

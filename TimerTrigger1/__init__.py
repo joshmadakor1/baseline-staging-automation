@@ -5,7 +5,7 @@ import azure.functions as func
 
 
 def main(mytimer: func.TimerRequest) -> None:
-    my_message = "I just drank a honey cinnamon latte with oat milk at Caffe Ladro. (with cake)"
+    my_message = "It's far too hot to go outside now."
     print(my_message)
     logging.info(my_message)
     utc_timestamp = datetime.datetime.utcnow().replace(
